@@ -1,0 +1,110 @@
+/* Reseteo de márgenes, relleno y color de fondo para todos los elementos */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 0); /* Fondo negro */
+}
+
+/* Estilo de fuente general para la página */
+main {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white; /* Color de texto blanco para todo el cuerpo */
+}
+
+/* Encabezado principal */
+header { 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40pt;
+    color: rgb(255, 255, 255); /* Asegúrate que el encabezado sea blanco */
+    text-align: center;
+}
+
+/* Barra de navegación */
+nav {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(255, 255, 255); /* Color blanco para la navegación */
+    padding: 3%;
+}
+
+/* Elementos de lista en el menú */
+li {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
+    font-size: 13pt;
+    color: white; /* Asegúrate que los elementos de la lista sean blancos */
+}
+
+/* Enlaces de navegación */
+a {
+    color: white; /* Cambiado a blanco */
+    text-decoration: none;
+    font-size: 13pt;
+}
+
+/* Efecto hover en los enlaces */
+a:hover {
+    font-weight: bolder;
+    right: 5px;
+    color: rgb(189, 175, 137); /* Puedes cambiar el color del hover si deseas */
+}
+
+/* Galería de imágenes */
+#galería {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+
+/* Contenedor de cada elemento de la galería */
+#elementoflex {
+    width: 25%;
+    margin-bottom: 20px; /* Espacio entre los elementos de la galería */
+}
+
+/* Imágenes dentro de cada elemento de la galería */
+#elementoflex img {
+    width: 100%; /* Anchura de la imagen al 100% del contenedor */
+    height: 200px; /* Altura fija para un tamaño uniforme */
+    object-fit: cover; /* Ajusta la imagen sin distorsión */
+    border-radius: 10px; /* Bordes redondeados */
+    opacity: 0.6; /* Opacidad inicial */
+    transition: opacity 0.3s ease, filter 0.3s ease; /* Transiciones para suavizar el efecto */
+    filter: blur(2px); /* Efecto de desenfoque inicial */
+}
+
+/* Efecto hover para que la imagen se vea nítida */
+#elementoflex img:hover {
+    opacity: 1; /* Opacidad al 100% */
+    filter: blur(0); /* Elimina el desenfoque */
+}
+
+/* Título dentro de cada elemento de la galería */
+#elementoflex div {
+    width: 100%;
+    margin: auto;
+    padding: 5px;
+    position: relative;
+    top: -5px;
+}
+
+/* Estilo para subtítulos en blanco */
+h5 {
+    font-family: fantasy;
+    font-size: 18pt;
+    color: white; /* Cambia el color de los títulos a blanco */
+}
+
+/* Párrafos */
+p {
+    font-size: 11pt;
+    color: white; /* Cambiado a blanco para párrafos */
+}

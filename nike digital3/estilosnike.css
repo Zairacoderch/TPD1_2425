@@ -97,8 +97,18 @@ a[href="#"]:hover {
 .menu-horizontal li a:hover {
   color: green;
   text-decoration: underline; 
+  transform: translateX(10px); /* Mueve el enlace 5px a la derecha */
 }
 
 .menu-horizontal li:last-child {
   margin-right: 0;
+}
+nav {
+  position: fixed; /* Fija el menú en la parte superior */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #a79889;
+  z-index: 1000; /* Asegura que esté sobre otros elementos */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
