@@ -1,0 +1,159 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.nav-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-black {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: right;
+    font-size: 16px;
+}
+
+.nav-white {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav-white .logo {
+    height: 50px;
+}
+
+.nav-white ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-white ul li {
+    margin-left: 20px;
+}
+
+.nav-white ul li a {
+    text-decoration: none;
+    color: black;
+    transition: font-weight 0.3s ease;
+}
+
+.nav-white ul li a:hover {
+    font-weight: bold;
+}
+
+.banner {
+    position: relative;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.banner img.qr {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.banner-texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+#servicios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.servicio {
+    text-align: center;
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servicio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.servicio img {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+.servicio h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.servicio p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+
+footer {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 14px;
+}
+.visitas-guiadas {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Ajusta la altura según sea necesario */
+    background-color: #f4f4f4; /* Fondo de la sección */
+}
+
+.visitas-imagen {
+    background-image: url('visitas-guiadas.png'); /* Ruta de la imagen */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.visitas-texto {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%; /* Toma la mitad derecha */
+    background: rgba(128, 0, 128, 0.7); /* Color morado con opacidad */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.visitas-texto h2 {
+    font-size: 28px;
+}
