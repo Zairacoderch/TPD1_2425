@@ -1,0 +1,114 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif; /* Tipografía principal */
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    background: #000; /* Fondo negro */
+}
+
+header {
+    background: #000;
+    color: #fff;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Sección de "Sobre mí" */
+.imagen-borrosa {
+    position: relative;
+    overflow: hidden;
+    padding: 3rem 0; /* Aumento el padding superior para mayor separación */
+    height: 80vh; /* Aumentamos la altura de la sección para mayor espacio */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagen-borrosa img {
+    height: 60vh; /* Imagen más grande (60% de la altura de la página) */
+    width: auto;
+    border-radius: 50%;
+    filter: blur(10px);
+    transition: filter 0.3s;
+}
+
+.imagen-borrosa:hover img {
+    filter: blur(0);
+}
+
+.imagen-borrosa h2 {
+    position: relative;
+    color: #fff;
+    margin: 1rem 0;
+    transition: opacity 0.3s;
+}
+
+.imagen-borrosa:hover h2 {
+    opacity: 0;
+}
+
+/* Estilo del párrafo con la tipografía "Dancing Script" */
+.presentacion {
+    margin-top: 3rem; /* Aumentamos el margen superior para mayor separación */
+    font-family: 'Dancing Script', cursive; /* Tipografía manuscrita */
+    font-size: 1.2rem;
+    color: #fff;
+    max-width: 500px;
+    line-height: 1.5;
+    margin: 0 auto;
+}
+
+/* Sección de proyectos */
+#proyectos {
+    margin: 2rem 0;
+}
+
+.botones-proyectos {
+    display: flex;
+    flex-direction: row; /* Columnas horizontales */
+    justify-content: center;
+    gap: 1rem;
+}
+
+.boton {
+    display: block;
+    padding: 1rem 2rem;
+    background: #fff; /* Botón blanco */
+    color: #000; /* Texto negro */
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s;
+    text-align: center;
+    width: 200px; /* Botones rectangulares */
+}
+
+.boton:hover {
+    background: #ccc;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background: #000;
+    color: #fff;
+    padding: 1rem;
+    font-size: 0.8rem;
+}
