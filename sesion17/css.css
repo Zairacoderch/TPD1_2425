@@ -1,5 +1,6 @@
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
@@ -9,14 +10,16 @@ body {
     background-color: #f4f4f4;
 }
 
+
 .container {
     width: 90%;
     max-width: 1200px;
     padding: 20px;
-    display: grid; /* Usamos Grid en lugar de Flexbox */
-    grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
-    grid-gap: 20px; /* Espacio entre las tarjetas (horizontal y vertical) */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 20px; 
 }
+
 
 .card {
     background-color: white;
@@ -29,18 +32,23 @@ body {
 }
 
 .card:hover {
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Relieve al pasar el ratón */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
 }
+
 
 .card h3 {
     font-size: 24px;
+    font-family: 'Montserrat', sans-serif; 
     margin-bottom: 10px;
 }
+
 
 .card p {
     font-size: 18px;
     line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
 }
+
 
 .icono {
     width: 40px;
@@ -51,10 +59,48 @@ body {
     margin-right: auto;
 }
 
+
 .font-example {
     font-size: 30px;
     font-weight: bold;
     letter-spacing: 2px;
     color: #333;
     margin-top: 10px;
+}
+
+
+.card:nth-child(1) .font-example {
+    font-family: 'Roboto', sans-serif;
+}
+
+.card:nth-child(2) .font-example {
+    font-family: 'Lobster', cursive;
+}
+
+.card:nth-child(3) .font-example {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.card:nth-child(4) .font-example {
+    font-family: 'Raleway', sans-serif;
+}
+
+.card:nth-child(5) .font-example {
+    font-family: 'Playfair Display', serif;
+}
+
+.card:nth-child(6) .font-example {
+    font-family: 'Pacifico', cursive;
+}
+
+.card:nth-child(7) .font-example {
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.card:nth-child(8) .font-example {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card:nth-child(9) .font-example {
+    font-family: 'Merriweather', serif;
 }
