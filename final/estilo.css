@@ -1,0 +1,153 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    background: #000;
+}
+
+header {
+    background: #000;
+    color: #fff;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Sección de "Sobre mí" */
+.imagen-borrosa {
+    position: relative;
+    overflow: hidden;
+    padding: 3rem 0;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagen-borrosa img {
+    height: 60vh;
+    width: auto;
+    border-radius: 50%;
+    filter: blur(10px);
+    transition: filter 0.3s;
+}
+
+.imagen-borrosa:hover img {
+    filter: blur(0);
+}
+
+.imagen-borrosa h2 {
+    position: relative;
+    color: #fff;
+    margin: 1rem 0;
+    transition: opacity 0.3s;
+}
+
+.imagen-borrosa:hover h2 {
+    opacity: 0;
+}
+
+/* Estilo del párrafo con la tipografía "Dancing Script" */
+.presentacion, .descripcion-proyecto {
+    margin-top: 3rem;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.2rem;
+    color: #fff;
+    max-width: 500px;
+    line-height: 1.5;
+    margin: 0 auto;
+}
+
+/* Sección de proyectos */
+#proyectos {
+    margin: 2rem 0;
+}
+
+.botones-proyectos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.boton {
+    display: block;
+    padding: 1rem 2rem;
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s;
+    text-align: center;
+    width: 200px;
+}
+
+.boton:hover {
+    background: #ccc;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background: #000;
+    color: #fff;
+    padding: 1rem;
+    font-size: 0.8rem;
+}
+
+.contenido-proyecto {
+    display: flex;
+    flex-wrap: wrap; /* Para permitir que las imágenes floten y se ajusten */
+    justify-content: space-between; /* Espacio entre las imágenes */
+    gap: 10px;
+    padding: 20px;
+}
+
+.imagen-proyecto {
+    width: 48%; /* Imágenes ocupando el 50% del ancho */
+    height: auto;
+    margin: 0;
+    float: left;
+}
+
+.descripcion-proyecto {
+    width: 48%; /* El texto ocupa el 50% del ancho */
+    font-family: 'Dancing Script', cursive;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #ffffff;
+    float: left;
+}
+
+/* Nueva clase para alternar la posición de las imágenes */
+.imagen-izquierda {
+    float: left;
+}
+
+.imagen-derecha {
+    float: right;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
