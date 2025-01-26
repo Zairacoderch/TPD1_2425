@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="estiloanimacion.css"> <!-- Enlace al archivo CSS -->
+</head>
+
+<body>
+    <header>
+        <h1>Mi Portafolio</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="proyectos">
+        <article id="proyecto1">
+            <h3>Animación</h3>
+
+            <div class="proyecto-detalle">
+                <!-- Contenedor para video centrado -->
+                <div class="video-container">
+                    <!-- Checkbox invisible para controlar el play -->
+                    <input type="checkbox" id="video-play" class="video-play" hidden>
+
+                    <!-- Botón de Play que aparece cuando el video no está en reproducción -->
+                    <label for="video-play" class="play-btn">
+                        <img src="play.png" alt="Play" id="play-icon">
+                    </label>
+
+                    <!-- Video que aparece cuando el checkbox es seleccionado -->
+                    <video id="video" class="video" controls width="80%" max-width="800px">
+                        <source src="INFOGRAFIA.mp4" type="video/mp4">
+                        Tu navegador no soporta la etiqueta de video. Por favor, actualiza tu navegador.
+                    </video>
+                </div>
+            </div>
+
+            <!-- Sección con texto en 3 columnas verticales -->
+            <div class="texto-columnas">
+                <div class="columna">
+                    <p>Año 2024</p>
+                </div>
+                <div class="columna">
+                    <p>
+                        Imagina una explosión visual que no solo muestra datos, sino que los hace cobrar vida ante tus ojos. Esta animación, creada con la potencia de After Effects, es mucho más que un simple gráfico: es una experiencia dinámica que revela el impresionante disparo de ventas de los coches eléctricos.
+
+                        Gracias a las expresiones mágicas que dan vida a cada movimiento, cada número y cada gráfico se transforma en una narrativa visual hipnótica que captura la esencia de esta transformación en la industria automotriz. Con un diseño limpio y moderno, los datos no solo se presentan, ¡se sienten! Cada despliegue de información está perfectamente sincronizado, como si la animación respirara al ritmo del mercado, llevando al espectador a un viaje donde las ventas se disparan como cohetes en el cielo.
+
+                        El uso de expresiones en After Effects es el ingrediente secreto detrás de esta animación: cálculos precisos y ajustes automáticos que permiten una fluidéz perfecta, sin perder detalle. Lo que ves no es solo una serie de números; es la evolución, el progreso y la fuerza imparable del futuro de la movilidad.
+
+                        Esta animación es un ejemplo perfecto de cómo la tecnología y la creatividad se unen para crear contenido atractivo, informativo y, sobre todo, inolvidable. Si quieres ver el futuro del transporte a través de un lente visual, esta animación te lleva justo allí. ¡Que empiece el viaje hacia un futuro más verde y eléctrico!
+                    </p>
+                </div>
+                <div class="columna">
+                    <p>Realizado por: Zaira Coderch</p>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <section id="contacto">
+        <h2>¡Contáctame!</h2>
+        <div>
+            <img src="yo.png" alt="Imagen de Yo">
+        </div>
+        <p>Estoy siempre en búsqueda de nuevos proyectos emocionantes. Si te ha gustado mi trabajo, ¡no dudes en
+            ponerte en contacto!</p>
+        <div>
+            <a href="https://www.instagram.com/tuusuario" target="_blank" class="boton contacto-boton">Instagram</a>
+            <a href="https://www.behance.net/tuusuario" target="_blank" class="boton contacto-boton">Behance</a>
+            <a href="https://wa.me/tuNumeroDeWhatsApp" target="_blank" class="boton contacto-boton">WhatsApp</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mi Portafolio</p>
+    </footer>
+</body>
+
+</html>
+

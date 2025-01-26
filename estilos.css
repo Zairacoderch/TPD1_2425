@@ -31,7 +31,7 @@ h1 {
   font-size: 0.9rem;
   color: #ffffff;
   font-style: italic;
-  margin-bottom: 5px;
+  margin-bottom: 5px; /* space between the two subtitles */
 }
 
 /* Fixed menu */
